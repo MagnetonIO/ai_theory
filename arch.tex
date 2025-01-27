@@ -1,0 +1,23 @@
+\documentclass[tikz,border=3mm]{standalone}
+
+\begin{document}
+
+\begin{tikzpicture}
+% Layers of the architecture
+\fill[blue!30] (0,0) rectangle (1,3) node[midway] {Input};
+\fill[green!30] (2,0.5) rectangle (3,2.5) node[midway] {Embed};
+\fill[orange!30] (4,1) rectangle (5,2) node[midway] {KAN};
+\fill[red!30] (6,0) rectangle (7,3) node[midway] {Output};
+
+% Arrows
+\draw[->, thick] (1,1.5) -- (2,1.5);
+\draw[->, thick] (3,1.5) -- (4,1.5);
+\draw[->, thick] (5,1.5) -- (6,1.5);
+
+% Labels
+\node[above] at (1.5,1.5) {Embedding};
+\node[above] at (4.5,1.5) {Spline Activation};
+\node[below] at (6.5,1.5) {Prediction};
+\end{tikzpicture}
+
+\end{document}
