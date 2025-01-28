@@ -36,13 +36,18 @@ Scaling Laws and Architectural Innovations for Efficient NLP}}
 \maketitle
 
 \begin{abstract}
-Transformer-based large language models (LLMs) face fundamental scalability challenges due to their quadratic attention complexity and lack of explicit knowledge integration. We present KalmaGrove-Arnold Networks (KAN), a novel architecture combining knowledge-augmented representations with group-theoretic constraints, achieving:
+Transformer-based large language models (LLMs) face fundamental scalability challenges 
+due to their quadratic attention complexity and lack of explicit knowledge integration. 
+We present KalmaGrove-Arnold Networks (KAN), a novel architecture combining 
+knowledge-augmented representations with group-theoretic constraints, achieving:
 \begin{itemize}
     \item 9$\times$ faster convergence than Transformer baselines
     \item Sub-quadratic scaling ($O(n^{1.5})$) in sequence length
     \item State-of-the-art results on 7/9 GLUE tasks with 80\% fewer parameters
 \end{itemize}
-Our theoretical analysis reveals KAN's superior parameter efficiency through representation-theoretic bounds, while empirical results demonstrate practical viability across NLP tasks. Code and models available at \url{https://github.com/mintisan/awesome-kan}.
+Our theoretical analysis reveals KAN's superior parameter efficiency through 
+representation-theoretic bounds, while empirical results demonstrate practical viability 
+across NLP tasks. Code and models available at \url{https://github.com/mintisan/awesome-kan}.
 \end{abstract}
 
 \section{Introduction}
