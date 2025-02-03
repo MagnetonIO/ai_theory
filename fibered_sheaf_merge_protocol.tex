@@ -150,11 +150,23 @@ Algorithm~\ref{alg:fibered_sheaf_merge} outlines how we automatically or semi-au
 \end{algorithm}
 
 \paragraph{Key Steps}
-1. **Overlap Detection**: Identify the intersection domain between two knowledge nodes $C_i$ and $C_j$.  
-2. **Fiber Lookup**: Fetch all possible states ($S_i, S_j$) in $\mathcal{E}_{C_i}$ and $\mathcal{E}_{C_j}$.  
-3. **Consistency Check**: If the states do not conflict, unify them into a single merged state $s_{ij}$.  
-4. **Conflict Resolution**: If a contradiction is found, apply rules $\mathcal{R}$ (priority, time stamp, confidence) to see if we can unify automatically. Otherwise, store multiple parallel states in $\mathcal{E}_{C_i \cup C_j}$.  
-5. **Update**: Insert the resulting states (unique or branched) back into the fiber category.  
+
+\begin{enumerate}
+    \item \textbf{Overlap Detection} \\
+    Identify the intersection domain between two knowledge nodes \(C_i\) and \(C_j\).
+
+    \item \textbf{Fiber Lookup} \\
+    Fetch all possible states \((S_i, S_j)\) in \(\mathcal{E}_{C_i}\) and \(\mathcal{E}_{C_j}\).
+
+    \item \textbf{Consistency Check} \\
+    If the states do not conflict, unify them into a single merged state \(s_{ij}\).
+
+    \item \textbf{Conflict Resolution} \\
+    If a contradiction is found, apply rules \(\mathcal{R}\) (priority, time stamp, confidence) to see if we can unify automatically. Otherwise, store multiple parallel states in \(\mathcal{E}_{C_i \cup C_j}\).
+
+    \item \textbf{Update} \\
+    Insert the resulting states (unique or branched) back into the fiber category.
+\end{enumerate}
 
 \subsection{Conflict Resolution Rule Examples}
 \begin{itemize}
@@ -248,13 +260,17 @@ class FiberedSheafSystem:
 
 \subsection{Example Scenario}
 
-Suppose node $C_i$ states \emph{``User X is in London''} ($t=5$, $\alpha=0.7$) and node $C_j$ states \emph{``User X is in Paris''} ($t=10$, $\alpha=0.8$). The overlap is the location of \emph{User X}.
+Suppose node $C_i$ states “User X is in London” $(t = 5, \alpha = 0.7)$ and node $C_j$ states “User X is in Paris” 
+$(t = 10, \alpha = 0.8)$. The overlap is the location of \emph{User X}.
 
-- \(\textbf{check\_consistency}\) might find them contradictory.  
-- \(\textbf{resolve\_conflict}\) with a **Most-Recent-Wins** rule sees $t(C_j)=10 > 5$, so it picks \emph{Paris}.  
-- The system merges $C_i$ and $C_j$ into $C_{ij}$ with \emph{Paris} for location.  
+\begin{itemize}
+    \item \textbf{Check consistency} might find them contradictory.
+    \item \textbf{Resolve conflict} with a \textbf{Most-Recent-Wins} rule: since $t(C_j) = 10 > 5$, the system picks ``Paris''.
+    \item The system merges $C_i$ and $C_j$ into $C_{ij}$ with ``Paris'' for location.
+\end{itemize}
 
-If the time stamps are equal or confidence is near tie, the system may either \emph{branch} or \emph{flag for human input}.
+If the time stamps are equal or the confidence scores are nearly tied, the system may either \emph{branch} 
+or \emph{flag for human input}.
 
 ---
 
