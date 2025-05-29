@@ -1,0 +1,46 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{booktabs}
+
+\title{AI-Prompt-Driven Curriculum for Functorial Physics}
+\date{}
+\begin{document}
+
+\maketitle
+
+\noindent
+\textbf{A modular, self-guided curriculum using AI prompts to explore and internalize the framework. At each step, feed the prompt to your favorite LLM, refine its output, and compare against canonical references.}
+
+\vspace{1em}
+
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{1.8cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X}
+\toprule
+\textbf{Module} & \textbf{Learning Goals} & \textbf{AI Prompt} \\
+\midrule
+1. Foundations of Category Theory & Understand objects, morphisms, functors, natural transformations & ``Explain the basic concepts of category theory—objects, morphisms, functors, and natural transformations—with simple examples.'' \\
+\midrule
+2. Classical Mechanics as a Category & Model symplectic manifolds and canonical maps categorically & ``Describe the category whose objects are symplectic manifolds and whose morphisms are symplectomorphisms, including examples.'' \\
+\midrule
+3. Quantum Mechanics as a Category & View Hilbert spaces and unitaries in categorical terms & ``Define the category of Hilbert spaces with unitary morphisms. How do quantum channels generalize this?'' \\
+\midrule
+4. Building the Quantization Functor & Construct $\mathcal{Q} : \mathbf{C} \to \mathbf{Q}$ on simple systems & ``Show how to quantize the 1D harmonic oscillator by defining a functor from its phase space to a Hilbert space and symplectic flow to the unitary propagator.'' \\
+\midrule
+5. Semiclassical \& De-Quantization Functor & Capture $\hbar \to 0$ limits as a functor & ``Explain how to construct a functor from quantum systems back to classical phase spaces via WKB approximation, illustrating with coherent states.'' \\
+\midrule
+6. Adjointness \& Natural Transformations & Verify the adjoint relationship and correspondence principle & ``Demonstrate the unit and counit natural transformations that witness an adjunction between quantization and semiclassical functors.'' \\
+\midrule
+7. Applications \& Extensions & Explore field theories, gauge symmetry, and topological functors & ``Propose how higher-category or 2-functor structures can encode path integrals or gauge symmetry in Functorial Physics.'' \\
+\midrule
+8. Research Project & Design a small research question in functorial unification & ``Using Functorial Physics, outline a project to functorially quantize a simple gauge theory (e.g. U(1) electromagnetism) and compare classical and quantum structures.'' \\
+\bottomrule
+\end{tabularx}
+
+\end{document}
