@@ -1,72 +1,63 @@
 # AI Theory
 
-Welcome to the **AI Theory** repository, a hub for advancing the theoretical foundations of Artificial Intelligence. This project delves into interdisciplinary research, combining computational frameworks with mathematical theories to uncover new principles driving AI innovation.
+This repository contains theoretical research on the mathematical and computational foundations of artificial intelligence. The work focuses on rigorous mathematical frameworks, computational complexity analysis, and novel neural network architectures.
 
----
+## Repository Structure
 
-## 📘 Overview
+```
+papers/
+├── mathematical_foundations/    # Category theory, topology, algebraic structures
+├── neural_architectures/       # Novel network designs and scaling analysis
+├── formal_methods/             # Verification and formal grammar systems
+├── computational_theory/       # Complexity and algorithmic analysis
+└── epistemology/              # AI comprehension and research methodology
+```
 
-This repository serves as a platform to explore the theoretical and mathematical underpinnings of AI. By connecting advanced topics in mathematics, information theory, and cosmology, we aim to broaden the understanding of AI's potential.
+## Research Areas
 
----
+### Mathematical Foundations
+- **Category Theory Applications**: Functorial approaches to neural networks and memory systems
+- **Homotopy Type Theory**: Theoretical extensions of Kalman-Grove-Arnold Networks
+- **Sheaf Theory**: Distributed memory architectures and topological data structures
+- **Topos Theory**: Categorical foundations for AI memory and reasoning systems
 
-## 🌌 Areas of Focus
+### Neural Architectures
+- **Kalman-Grove-Arnold Networks**: Theoretical analysis and practical implementations
+- **Scaling Laws**: Mathematical characterization of training efficiency and cost reduction
+- **Cost Optimization**: Algorithmic approaches to computational resource minimization
 
-- **Mathematical Foundations**  
-  Investigating category theory, universal algebra, and higher-order algebra in AI systems.
+### Formal Methods
+- **Formal Grammar Systems**: Functorial Fourier transforms for linguistic structures
+- **Verification Techniques**: Formal proofs for AI system correctness
+- **Hybrid Encryption**: Security frameworks for distributed AI systems
 
-- **Information Theory**  
-  Exploring concepts of entropy, data encoding, and transformations in AI and machine learning.
+### Computational Theory
+- **Complexity Analysis**: Theoretical bounds on AI computational requirements
+- **Algorithmic Frameworks**: Fundamental algorithms for AI reasoning and learning
 
-- **Cosmological Connections**  
-  Drawing parallels between AI frameworks and cosmological phenomena such as the expanding universe and gravitational waves.
+## Build Instructions
 
-- **Formal Systems**  
-  Applying formal verification and proof techniques to ensure the correctness and reliability of AI models.
+```bash
+# Compile all LaTeX papers
+./scripts/build.sh
 
----
+# Clean compilation artifacts
+./scripts/clean.sh
+```
 
-## 🚀 Goals
+## Paper Index
 
-1. Advance the theoretical understanding of Artificial Intelligence.  
-2. Foster collaboration among mathematicians, scientists, and AI researchers.  
-3. Explore innovative intersections of AI, mathematics, and physics.  
-4. Build a community contributing to AI's theoretical and practical growth.
+See [`docs/paper_index.md`](docs/paper_index.md) for a complete listing of papers, their current status, and target publication venues.
 
----
+## Contributing
 
-## 🤝 Contributing
+Contributions should maintain mathematical rigor and include formal proofs where applicable. All submissions must:
 
-We welcome contributions from mathematicians, computer scientists, physicists, and AI enthusiasts. Here's how you can get involved:
+1. Include complete mathematical formulations
+2. Provide computational complexity analysis
+3. Reference relevant theoretical literature
+4. Follow standard mathematical notation conventions
 
-1. **Fork the repository** and create a new branch for your changes.
-2. Submit an **issue** or join discussions on ongoing topics.
-3. Open a **pull request** for review and feedback.
+## License
 
-### Code of Conduct
-
-By contributing, you agree to adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE). See the LICENSE file for details.
-
----
-
-## 🛠️ Technologies
-
-- **Languages**: Python, Rust, and others as necessary.  
-- **Tools**: LaTeX for mathematical documentation, Jupyter for interactive experimentation.  
-- **Frameworks**: Torch and TensorFlow for applied AI research.
-
----
-
-## 📬 Contact
-
-For inquiries, reach out to us at **info@magnetonlabs.com**. Stay updated by following this repository for future developments.
-
----
-
-Join us in exploring the limitless possibilities of AI theory!
+MIT License - see LICENSE file for details.
