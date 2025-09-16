@@ -34,6 +34,6 @@
   <!-- Highlight box -->
   <rect x="350" y="400" width="500" height="70" rx="35" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
   <text x="600" y="445" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="white" text-anchor="middle">
-    5 Groundbreaking Papers in Topological AI
+    5 Foundational Papers in Topological AI
   </text>
 </svg>
