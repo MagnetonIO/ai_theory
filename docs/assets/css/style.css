@@ -185,9 +185,10 @@ nav a:hover {
 
 .papers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    align-items: stretch;
 }
 
 .paper-card {
@@ -199,6 +200,9 @@ nav a:hover {
     border: 1px solid rgba(0,0,0,0.06);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .paper-card::before {
@@ -248,6 +252,11 @@ nav a:hover {
     margin-bottom: 1rem;
     line-height: 1.8;
     font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+.paper-card p:last-of-type {
+    margin-bottom: 1.5rem;
 }
 
 .btn-primary,
@@ -258,11 +267,12 @@ nav a:hover {
     border-radius: 8px;
     transition: all 0.3s ease;
     font-weight: 600;
-    margin-top: 1rem;
+    margin-top: auto;
     font-size: 0.95rem;
     letter-spacing: 0.02em;
     position: relative;
     overflow: hidden;
+    align-self: flex-start;
 }
 
 .btn-primary {
@@ -502,6 +512,16 @@ footer p {
         max-width: 1320px;
     }
     
+    .papers-grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* For very large screens, ensure 3 columns */
+@media (min-width: 1600px) {
     .papers-grid {
         grid-template-columns: repeat(3, 1fr);
     }
