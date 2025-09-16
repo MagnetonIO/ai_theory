@@ -1,0 +1,54 @@
+# Jekyll configuration for GitHub Pages
+title: AI Theory Research Repository
+description: A collection of research papers exploring the theoretical underpinnings of artificial intelligence
+author: AI Theory Research Team
+email: 
+url: "" # Will be filled in when you know your GitHub Pages URL
+baseurl: "" # Will be /repository-name if not using custom domain
+
+# Build settings
+theme: null # We're using custom HTML/CSS
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude files from build
+exclude:
+  - README.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+
+# Collections for organizing papers
+collections:
+  papers:
+    output: true
+    permalink: /papers/:path/
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: "assets/papers"
+    values:
+      pdf: true
+
+# SEO and metadata
+twitter:
+  card: summary_large_image
+social:
+  name: AI Theory Research
+  links:
+    - https://github.com/yourusername/ai_theory
+
+# Google Analytics (optional - add your tracking ID if you have one)
+google_analytics: 
+
+# Markdown processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
