@@ -1,0 +1,39 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.3"/>
+  
+  <!-- Topological circles decoration -->
+  <circle cx="600" cy="315" r="200" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  <circle cx="600" cy="315" r="150" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  <circle cx="600" cy="315" r="100" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  
+  <!-- Text content -->
+  <text x="600" y="200" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="white" text-anchor="middle">
+    AI Theory Research
+  </text>
+  
+  <text x="600" y="280" font-family="Inter, sans-serif" font-size="28" fill="white" text-anchor="middle" opacity="0.95">
+    Advancing AI Through Topological Reasoning
+  </text>
+  
+  <text x="600" y="320" font-family="Inter, sans-serif" font-size="28" fill="white" text-anchor="middle" opacity="0.95">
+    &amp; Mathematical Foundations
+  </text>
+  
+  <!-- Highlight box -->
+  <rect x="350" y="400" width="500" height="70" rx="35" fill="rgba(255,255,255,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+  <text x="600" y="445" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="white" text-anchor="middle">
+    5 Seminal Papers in Topological AI
+  </text>
+</svg>
